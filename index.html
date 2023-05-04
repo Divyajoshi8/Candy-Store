@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Store Seller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+		<h1>Candy Store</h1>
+		<form>
+			<div>
+				<label >Candy Name :</label>
+				<input type="text" id="item" name="item" required>
+			</div>
+			<div>
+				<label>Description :</label>
+				<input type="text" id="description" name="description" >
+			</div>
+			<div>
+				<label>Price (for one):</label>
+				<input type="number" id="price" name="price" required>
+			</div>
+			<div>
+				<label>Quantity :</label>
+				<input type="number" id="quantity" name="quantity" required>
+			</div>
+			<button type="submit"> Add Item </button>
+		</form>
+		<div>
+			<h2>Total Details</h2>
+			<ul id="Purchaselist"></ul>
+		</div>
+	</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
